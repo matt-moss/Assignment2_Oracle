@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="400dp"
+            android:id="@+id/Category_imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="false"
+            android:background="#373131" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="New Text"
+            android:id="@+id/Title_textView"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/Category_imageView"
+            android:textIsSelectable="false"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:text="New Text"
+            android:id="@+id/Body_textView"
+            android:layout_below="@+id/Title_textView"
+            android:layout_toEndOf="@+id/Category_imageView"
+            android:textSize="22dp"
+            android:paddingLeft="10dp"
+            android:layout_alignBottom="@+id/Category_imageView"
+            android:textIsSelectable="false" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.50"
+            android:id="@+id/Reminder_imageView"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/Title_textView" />
+    </RelativeLayout>
+
+</LinearLayout>
